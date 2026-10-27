@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Gabriela Nin Solis | Data Analyst</title>
+<meta name="description" content="Data Analyst con enfoque en visualización y reportes. SQL, Python y Tableau. Proyectos de funnels, cohortes, pruebas A/B y dashboards ejecutivos.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f7f6f9;--ink:#1e2230;--mute:#5d6275;--line:#dcdae3;--card:#fff;--blue:#4f6fa3;--mauve:#9a6f96;--link:#3d5a8f}
+@media (prefers-color-scheme:dark){:root{--bg:#14161e;--ink:#eceaf2;--mute:#a4a8b8;--line:#2d3040;--card:#1b1e29;--blue:#7b9bd0;--mauve:#c096bb;--link:#9db8e6}}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 Figtree,system-ui,sans-serif}
+a{color:var(--link)}
+a:focus-visible{outline:3px solid var(--blue);outline-offset:3px;border-radius:2px}
+.wrap{max-width:62rem;margin:0 auto;padding:0 1.25rem}
+h1,h2,h3{font-family:'Bricolage Grotesque',Figtree,sans-serif;line-height:1.15;margin:0}
+header{border-bottom:1px solid var(--line)}
+header .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem 1.25rem;flex-wrap:wrap}
+header strong{font-family:'Bricolage Grotesque',sans-serif;font-size:1.1rem}
+nav a{margin-left:1.25rem;text-decoration:none;color:var(--mute);font-weight:500}
+nav a:hover{color:var(--ink)}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:3rem;align-items:center;padding:4.5rem 0 4rem}
+.hero h1{font-size:clamp(2.4rem,5.5vw,3.8rem);font-weight:700;letter-spacing:-.02em}
+.hero .role{font-size:1.2rem;color:var(--mauve);font-weight:600;margin:.75rem 0 1.25rem}
+.hero p{max-width:34rem;margin:0 0 1.5rem}
+.btns a{display:inline-block;padding:.65rem 1.1rem;border-radius:.4rem;font-weight:600;text-decoration:none;margin:0 .6rem .6rem 0}
+.btn1{background:var(--ink);color:var(--bg)}
+.btn2{border:1.5px solid var(--ink);color:var(--ink)}
+figure{margin:1.2rem 0}
+.photo{width:100%;max-width:19rem;height:auto;aspect-ratio:1;object-fit:cover;border-radius:50%;justify-self:center;background:var(--line)}
+.funnel{display:grid;gap:.45rem}
+.funnel div{display:grid;grid-template-columns:7.5rem 1fr;align-items:center;gap:.6rem;font-size:.85rem;color:var(--mute)}
+.funnel span{display:block;height:1.6rem;background:var(--blue);border-radius:.15rem;transform-origin:left;color:#fff;font-size:.8rem;font-weight:600;padding:0 .5rem;line-height:1.6rem;white-space:nowrap}
+.funnel div:last-child span{background:var(--mauve)}
+figcaption{font-size:.85rem;color:var(--mute);margin-top:.9rem}
+section{padding:3.5rem 0;border-top:1px solid var(--line)}
+section>.wrap>h2{font-size:clamp(1.7rem,3.5vw,2.2rem);margin-bottom:.4rem}
+.lead{color:var(--mute);max-width:40rem;margin:0 0 2rem}
+.proj{background:var(--card);border:1px solid var(--line);border-radius:.6rem;padding:1.6rem;margin-bottom:1.25rem}
+.proj h3{font-size:1.35rem}
+.tag{display:inline-block;font-size:.8rem;font-weight:600;color:var(--mauve);margin-bottom:.4rem}
+.proj dl{display:grid;grid-template-columns:9rem 1fr;gap:.5rem 1rem;margin:1rem 0}
+.proj dt{font-weight:600;color:var(--mute)}
+.proj dd{margin:0}
+.tools{font-size:.92rem;color:var(--mute)}
+.shot{display:block;width:auto;max-width:min(100%,34rem);height:auto;border:1px solid var(--line);border-radius:.4rem;margin:1rem 0}
+.proj .links{margin-top:.9rem;font-weight:600}
+.proj .links a{margin-right:1.4rem}
+.more{display:grid;grid-template-columns:repeat(auto-fit,minmax(15rem,1fr));gap:1rem}
+.more div{border-left:3px solid var(--blue);padding:.2rem 0 .2rem 1rem}
+.more h3{font-size:1.05rem;margin-bottom:.3rem}
+.more p{margin:0;font-size:.95rem;color:var(--mute)}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr));gap:1.5rem}
+.skills h3{font-size:1rem;color:var(--mute);margin-bottom:.4rem}
+.skills p{margin:0}
+footer{padding:3rem 0 4rem;border-top:1px solid var(--line)}
+footer h2{font-size:1.8rem;margin-bottom:.5rem}
+footer p{margin:.2rem 0}
+@media (max-width:760px){.hero{grid-template-columns:1fr;gap:2rem;padding:3rem 0}.proj dl{grid-template-columns:1fr;gap:.1rem}.proj dt{margin-top:.6rem}nav a:first-child{margin-left:0}}
+</style>
+</head>
+<body>
+<header><div class="wrap"><strong>Gabriela Nin Solis</strong>
+<nav><a href="#proyectos">Proyectos</a><a href="#habilidades">Habilidades</a><a href="#contacto">Contacto</a></nav></div></header>
+<main>
+<div class="wrap hero">
+<div>
+<h1>Gabriela Nin Solis</h1>
+<p class="role">Data Analyst · visualización y reportes</p>
+<p>Uso SQL, Python y Tableau para convertir datos en KPIs y dashboards claros que respaldan decisiones. Mi trayectoria en edición visual para publicaciones internacionales me enseñó a elegir lo esencial entre mucho material y a ordenarlo para un público específico.</p>
+<div class="btns"><a class="btn1" href="#proyectos">Ver proyectos</a><a class="btn2" href="Gabriela_Nin_Solis_CV.pdf" download>Descargar CV</a><a class="btn2" href="#contacto">Contactar</a></div>
+</div>
+<img class="photo" src="foto.jpg" width="400" height="400" alt="Retrato de Gabriela Nin Solis">
+</div>
+
+<section id="proyectos"><div class="wrap">
+<h2>Proyectos</h2>
+<p class="lead">Seis casos de negocio simulados del bootcamp de TripleTen. Cada uno parte de una pregunta de negocio y termina en una recomendación.</p>
+
+<article class="proj">
+<span class="tag">Caso simulado</span>
+<h3>RappiPlus: rentabilidad, funnel y experimento A/B</h3>
+<dl>
+<dt>Pregunta</dt><dd>¿Dónde se pierden usuarios y qué productos realmente dejan ganancia?</dd>
+<dt>Qué hice</dt><dd>Limpié y validé tres datasets, construí un funnel estricto y la retención semanal por cohortes, y evalué un cambio de interfaz con un z-test.</dd>
+<dt>Hallazgo</dt><dd>Solo 49.5% de los usuarios compra. La mayor pérdida (22%) ocurre antes de ingresar los datos de pago. El cambio de interfaz probado no tuvo efecto significativo (p = 0.42).</dd>
+<dt>Decisión posible</dt><dd>Priorizar la mejora del paso entre iniciar el checkout y el pago, y validarla con un nuevo A/B.</dd>
+</dl>
+<figure>
+<div class="funnel" role="img" aria-label="Funnel de conversión de RappiPlus: de 7,796 visitas a 3,857 compras, 49.5%">
+<div>first_visit<span style="width:100%">7,796</span></div>
+<div>select_item<span style="width:94.8%">94.8%</span></div>
+<div>add_to_cart<span style="width:90.5%">90.5%</span></div>
+<div>begin_checkout<span style="width:81.6%">81.6%</span></div>
+<div>add_payment_info<span style="width:63.7%">63.7%</span></div>
+<div>purchase<span style="width:49.5%">3,857 · 49.5%</span></div>
+</div>
+<figcaption>Funnel estricto: porcentaje de usuarios que llega a cada etapa. La mayor fuga está entre iniciar el checkout y dejar los datos de pago.</figcaption>
+</figure>
+<p class="tools">Python (pandas, NumPy, seaborn, Matplotlib, statsmodels) · SQL · Tableau</p>
+<p class="links"><a href="https://public.tableau.com/views/Dashboard_RappiPlus/OverviewEjecutivo">Ver dashboard en Tableau Public</a><a href="https://github.com/gabriela-nin-solis/rappiplus-analysis">Ver código en GitHub</a></p>
+</article>
+
+<article class="proj">
+<span class="tag">Caso simulado</span>
+<h3>Andes Capital Real Estate: dashboard comercial</h3>
+<dl>
+<dt>Pregunta</dt><dd>¿Qué impulsa los ingresos y qué tan estable es la relación con los clientes?</dd>
+<dt>Qué hice</dt><dd>Construí un dashboard de tres páginas en Tableau sobre 6,012.5 M en ingresos y 8,500 ventas, con KPIs, análisis YoY, estacionalidad, canales y cohortes.</dd>
+<dt>Hallazgo</dt><dd>Fuerte dependencia del canal Corredor y una cohorte que cayó de 373 a menos de 50 compras tras su primer mes.</dd>
+<dt>Decisión posible</dt><dd>Reducir la dependencia de un solo canal y crear un programa de recompra.</dd>
+</dl>
+<img class="shot" src="img/1_andes-capital_overview.png" alt="Dashboard de Andes Capital Real Estate" loading="lazy" onerror="this.remove()">
+<p class="tools">Tableau</p>
+<p class="links"><a href="https://public.tableau.com/views/Dashboard_Andes-Capital-Real-Estate/1OverviewEjecutivo">Ver dashboard en Tableau Public</a><a href="https://github.com/gabriela-nin-solis/andes-capital-dashboard">Ver en GitHub</a></p>
+</article>
+
+<article class="proj">
+<span class="tag">Caso simulado</span>
+<h3>Experimento A/B de una landing page</h3>
+<dl>
+<dt>Pregunta</dt><dd>¿Qué versión de la página convierte mejor y de qué canal viene el mejor tráfico?</dd>
+<dt>Qué hice</dt><dd>Validé datos de unos 40,000 usuarios y apliqué pruebas de Levene, Welch, z de proporciones y Chi-cuadrado.</dd>
+<dt>Hallazgo</dt><dd>La versión B superó a la A en gasto por usuario y en conversión (15.96% vs 12.57%), ambas diferencias significativas. Email fue la fuente con mayor tasa de conversión, aunque las diferencias entre fuentes son pequeñas.</dd>
+<dt>Decisión posible</dt><dd>Adoptar la versión B y reforzar el canal Email.</dd>
+</dl>
+<img class="shot" src="img/landing-ab_conversion-por-fuente.png" alt="Tasa de conversión por fuente de tráfico" loading="lazy" onerror="this.remove()">
+<p class="tools">Python (pandas, SciPy, statsmodels, seaborn, Matplotlib)</p>
+<p class="links"><a href="https://github.com/gabriela-nin-solis/landing-ab-test">Ver código en GitHub</a></p>
+</article>
+
+<article class="proj">
+<span class="tag">Caso simulado</span>
+<h3>Andes Retail Group: desempeño comercial 2024–2025</h3>
+<dl>
+<dt>Pregunta</dt><dd>¿Por qué cayeron los ingresos frente al año anterior?</dd>
+<dt>Qué hice</dt><dd>Diseñé un dashboard de dos vistas (resumen y detalle) en Tableau con KPIs de ingresos, utilidad, margen y variación interanual. Redacté la narrativa con el modelo SCQA y un mensaje ejecutivo para stakeholders.</dd>
+<dt>Hallazgo</dt><dd>La caída interanual de 6.8% se explica por el segmento Premium, la categoría Electrónica y las regiones Sur y Centro.</dd>
+<dt>Decisión posible</dt><dd>Priorizar acciones comerciales en esos segmentos, categorías y regiones.</dd>
+</dl>
+<img class="shot" src="img/1_andes-retail_overview.png" alt="Dashboard de Andes Retail Group" loading="lazy" onerror="this.remove()">
+<p class="tools">Tableau</p>
+<p class="links"><a href="https://public.tableau.com/views/Dashboard_Andes_Retail_Group_Tableau/DesempeoCcomercial2024-2025">Ver dashboard en Tableau Public</a><a href="https://github.com/gabriela-nin-solis/andes-retail-dashboard">Ver en GitHub</a></p>
+</article>
+<article class="proj">
+<span class="tag">Caso simulado</span>
+<h3>NovaRetail+: comportamiento de clientes e ingreso</h3>
+<dl>
+<dt>Pregunta</dt><dd>¿Qué hábitos de los clientes se asocian con un mayor ingreso?</dd>
+<dt>Qué hice</dt><dd>Detecté 4,567 ceros ocultos (30%) en el ingreso anual y los traté como nulos antes de analizar 15,000 clientes. Medí asociaciones con Pearson, Spearman, punto-biserial y V de Cramér.</dd>
+<dt>Hallazgo</dt><dd>La frecuencia de compra se asocia fuertemente con el ingreso anual (r = 0.93); la publicidad se asocia solo de forma moderada con las visitas (r = 0.58).</dd>
+<dt>Decisión posible</dt><dd>Impulsar la frecuencia de compra y probar la publicidad con un experimento, porque una correlación no demuestra causalidad.</dd>
+</dl>
+<img class="shot" src="img/novaretail_heatmap-correlaciones.png" alt="Mapa de calor de correlaciones de NovaRetail+" loading="lazy" onerror="this.remove()">
+<p class="tools">Python (pandas, NumPy, SciPy, seaborn, Matplotlib)</p>
+<p class="links"><a href="https://github.com/gabriela-nin-solis/novaretail-analysis">Ver código en GitHub</a></p>
+</article>
+<article class="proj">
+<span class="tag">Caso simulado</span>
+<h3>ConnectaTel: segmentación de clientes</h3>
+<dl>
+<dt>Pregunta</dt><dd>¿Cómo usan el servicio los clientes y cambia el patrón según la edad?</dd>
+<dt>Qué hice</dt><dd>Limpié tres datasets (4,000 usuarios y 40,000 registros de uso): dos valores centinela (-999 en edad y ? en ciudad), fechas fuera del periodo de análisis y nulos. Segmenté por nivel de uso y edad y revisé outliers con boxplots.</dd>
+<dt>Hallazgo</dt><dd>La mayoría de los clientes tiene uso medio, y la edad no cambia el patrón de consumo entre planes.</dd>
+<dt>Decisión posible</dt><dd>Diseñar ofertas por nivel de uso y no por edad.</dd>
+</dl>
+<img class="shot" src="img/connectatel_segmentos-uso.png" alt="Clientes de ConnectaTel por nivel de uso" loading="lazy" onerror="this.remove()">
+<p class="tools">Python (pandas, NumPy, seaborn, Matplotlib)</p>
+<p class="links"><a href="https://github.com/gabriela-nin-solis/connectatel-analysis">Ver código en GitHub</a></p>
+</article>
+</div></section>
+
+<section id="habilidades"><div class="wrap">
+<h2>Habilidades</h2>
+<p class="lead">Lo que uso en mis proyectos.</p>
+<div class="skills">
+<div><h3>Lenguajes</h3><p>SQL, Python (pandas, NumPy)</p></div>
+<div><h3>Visualización</h3><p>Tableau, seaborn, Matplotlib</p></div>
+<div><h3>Herramientas</h3><p>Excel, Google Sheets, Jupyter Notebook, GitHub</p></div>
+<div><h3>Métodos y análisis</h3><p>Análisis exploratorio, funnels y cohortes, KPIs, pruebas A/B, QA de datos, data storytelling</p></div>
+<div><h3>Idiomas</h3><p>Español (nativo), inglés y alemán (avanzados)</p></div>
+</div>
+</div></section>
+</main>
+
+<footer id="contacto"><div class="wrap">
+<h2>Hablemos de datos</h2>
+<p>Busco un puesto de Data Analyst con enfoque en reportes y visualización.</p>
+<p><a href="mailto:g.solis.gutierrez@gmail.com">g.solis.gutierrez@gmail.com</a></p>
+<p><a href="https://www.linkedin.com/in/gabriela-nin-solis">LinkedIn</a> · <a href="https://github.com/gabriela-nin-solis">GitHub</a> · <a href="https://public.tableau.com/app/profile/gabriela.solis4330">Tableau Public</a></p>
+</div></footer>
+</body>
+</html>
